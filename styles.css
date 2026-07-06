@@ -1,0 +1,80 @@
+/* || Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colours */
+
+  --neutral-900: #2b2620;
+  --neutral-800: #3e3428;
+  --neutral-700: #5a4c3c;
+  --neutral-600: #7a6a57;
+  --neutral-400: #e4ded5;
+  --neutral-200: #f2eeea;
+  --neutral-100: #fbf6ef;
+  --neutral-50: #fdfbf7;
+  --neutral-0: #fff;
+  --sun-500: #edb63a;
+  --sun-300: #f5d98a;
+  --sun-200: #ffde7a;
+  --sun-50: #fff4dc;
+  --blue-500: #5769c6;
+  --terracotta-700: #9f3e1d;
+  --terracotta-600: #b7411b;
+  --terracotta-500: #c25a2e;
+  --terracotta-400: #e07a3f;
+  --rose-500: #c04a72;
+
+  /* Text Presets */
+  --txt-preset-1-fs: 2.5rem;
+  --txt-preset-1-lh: 120%;
+  --txt-preset-1-ls: -0.5px;
+  --txt-preset-1-ital-fs: 2.5rem;
+  --txt-preset-1-ital-lh: 120%;
+  --txt-preset-1-ital-ls: -0.5px;
+  --txt-preset-1-ital-style: italic;
+  --txt-preset-2-fs: 2rem;
+  --txt-preset-2-lh: 120%;
+  --txt-preset-2-ls: -0.25px;
+  --txt-preset-3-fs: 1.5rem;
+  --txt-preset-3-lh: 140%;
+  --txt-preset-3-ls: -0.2px;
+  --txt-preset-4-fs: 1.25rem;
+  --txt-preset-4-lh: 140%;
+  --txt-preset-4-ls: -0.1px;
+  --txt-preset-4-ital-fs: 1.25rem;
+  --txt-preset-4-ital-lh: 140%;
+  --txt-preset-4-ital-ls: -0.1px;
+  --txt-preset-4-ital-style: italic;
+  --txt-preset-5-fs: 14px;
+  --txt-preset-5-lh: 140%;
+  --txt-preset-5-med-fs: 0.875rem;
+  --txt-preset-5-med-lh: 120%;
+  --txt-preset-5-med-fw: 500;
+  --txt-preset-5-semi-b-fs: 0.875rem;
+  --txt-preset-5-semi-b-lh: 120%;
+  --txt-preset-5-semi-b-ls: 0.3px;
+  --txt-preset-5-semi-b-fw: 600;
+  --txt-preset-6-fs: 0.875rem;
+  --txt-preset-6-lh: 140%;
+  --txt-preset-6-ls: 2px;
+  --txt-preset-6-fw: 500;
+  --txt-preset-7-fs: 0.75rem;
+  --txt-preset-7-lh: 120%;
+  --txt-preset-7-ls: 0.4px;
+  --txt-preset-8-fs: 0.75rem;
+  --txt-preset-8-lh: 140%;
+  --txt-preset-8-ls: 2px;
+  --txt-preset-9-fs: 0.75rem;
+  --txt-preset-9-lh: 140%;
+  --txt-preset-10-fs: 10px;
+  --txt-preset-10-lh: 140%;
+  --txt-preset-10-ls: 1px;
+  --txt-preset-11-fs: 10px;
+  --txt-preset-11-lh: 140%;
+  --txt-preset-11-ls: 1px;
+}
