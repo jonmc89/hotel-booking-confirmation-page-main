@@ -78,3 +78,23 @@
   --txt-preset-11-lh: 140%;
   --txt-preset-11-ls: 1px;
 }
+
+/* || Main Styles */
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.0625rem solid var(--neutral-400);
+  background-color: var(--neutral-100);
+  padding: 1rem;
+}
+
+.header-menu-icon {
+  border: 0.0625rem solid var(--neutral-400);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
