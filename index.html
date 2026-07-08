@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Hotel booking confirmation page</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -27,6 +28,68 @@
         src="./assets/images/icon-menu.svg"
         alt="menu-icon"
       />
+      <div id="overlay" class="overlay"></div>
+      <div id="mobileMenu" class="mobile_menu">
+        <div class="mobile_header">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <img
+            id="closeBtn"
+            class="close-btn"
+            src="./assets/images/icon-close.svg"
+            alt="close button"
+          />
+        </div>
+        <div class="mobile_menu_content">
+          <div class="mobile_menu_list">
+            <ul class="mobile_nav">
+              <li class="mobile_nav_list_item">
+                <img src="./assets/images/icon-bed.svg" alt="bed icon" /> Your
+                stay
+              </li>
+              <li class="mobile_nav_list_item">
+                <img src="./assets/images/icon-house.svg" alt="house icon" />
+                The house
+              </li>
+              <li class="mobile_nav_list_item">
+                <img src="./assets/images/icon-pin.svg" alt="pin icon" /> Your
+                stay
+              </li>
+              <li class="mobile_nav_list_item">
+                <img
+                  src="./assets/images/icon-breakfast-outline.svg"
+                  alt="bed icon"
+                />
+                Breakfast
+              </li>
+              <li class="mobile_nav_list_item">
+                <img src="./assets/images/icon-mail.svg" alt="bed icon" />
+                Messages
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_menu_footer">
+            <div class="mobile_menu_weather">
+              <img
+                class="sun_image"
+                src="./assets/images/icon-weather.svg"
+                alt="a picture of an orange sun"
+              />
+
+              <div class="weather_text">
+                <p class="weather_today">TODAY IN CASSIS</p>
+                <p class="temperature">27°</p>
+                <p class="weather_description">Sunny - light breeze</p>
+              </div>
+            </div>
+            <hr />
+            <div class="menu_footer_text">
+              <p>EST. 1987</p>
+              <p>MAISON SOLEIL - 12 RYE DES OLIVIERS CASSIS</p>
+              <p>&copy; 2026 MAISON SOLEIL</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
