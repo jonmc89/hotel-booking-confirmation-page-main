@@ -30,46 +30,53 @@
   --rose-500: #c04a72;
 
   /* Text Presets */
-  --txt-preset-1-fs: 40px;
+  --txt-preset-1-fs: 48px;
   --txt-preset-1-lh: 120%;
   --txt-preset-1-ls: -0.0313rem;
-  --txt-preset-1-ital-fs: 40px;
+  --txt-preset-1-fw: 400;
+  --txt-preset-1-ital-fs: 2.5rem;
   --txt-preset-1-ital-lh: 120%;
   --txt-preset-1-ital-ls: -0.0313rem;
   --txt-preset-1-ital-style: italic;
-  --txt-preset-2-fs: 32px;
+  --txt-preset-1-ital-fw: 400;
+  --txt-preset-2-fs: 2rem;
   --txt-preset-2-lh: 120%;
   --txt-preset-2-ls: -0.0156rem;
-  --txt-preset-3-fs: 24px;
+  --txt-preset-2-fw: 400;
+  --txt-preset-3-fs: 1.5rem;
   --txt-preset-3-lh: 140%;
   --txt-preset-3-ls: -0.0125rem;
-  --txt-preset-4-fs: 20px;
+  --txt-preset-3-fw: 400;
+  --txt-preset-4-fs: 1.25rem;
   --txt-preset-4-lh: 140%;
   --txt-preset-4-ls: -0.0063rem;
-  --txt-preset-4-ital-fs: 20px;
+  --txt-preset-4-fw: 400;
+  --txt-preset-4-ital-fs: 1.25rem;
   --txt-preset-4-ital-lh: 140%;
   --txt-preset-4-ital-ls: -0.0063rem;
   --txt-preset-4-ital-style: italic;
+  --txt-preset-4-ital-fw: 400;
   --txt-preset-5-fs: 0.875rem;
   --txt-preset-5-lh: 140%;
-  --txt-preset-5-med-fs: 14px;
+  --txt-preset-5-fw: 400;
+  --txt-preset-5-med-fs: 0.875rem;
   --txt-preset-5-med-lh: 120%;
   --txt-preset-5-med-fw: 500;
-  --txt-preset-5-semi-b-fs: 14px;
+  --txt-preset-5-semi-b-fs: 0.875rem;
   --txt-preset-5-semi-b-lh: 120%;
   --txt-preset-5-semi-b-ls: 0.0187rem;
   --txt-preset-5-semi-b-fw: 600;
-  --txt-preset-6-fs: 14px;
+  --txt-preset-6-fs: 0.875rem;
   --txt-preset-6-lh: 140%;
   --txt-preset-6-ls: 0.125rem;
   --txt-preset-6-fw: 500;
-  --txt-preset-7-fs: 12px;
+  --txt-preset-7-fs: 0.75rem;
   --txt-preset-7-lh: 120%;
   --txt-preset-7-ls: 0.025rem;
-  --txt-preset-8-fs: 12px;
+  --txt-preset-8-fs: 0.75rem;
   --txt-preset-8-lh: 140%;
   --txt-preset-8-ls: 0.125rem;
-  --txt-preset-9-fs: 12px;
+  --txt-preset-9-fs: 0.75rem;
   --txt-preset-9-lh: 140%;
   --txt-preset-10-fs: 0.625rem;
   --txt-preset-10-lh: 140%;
@@ -87,16 +94,25 @@ body {
   height: 100vh;
 }
 
-/* Header */
+/* Mobile Header */
 
 header {
+  background-color: var(--neutral-100);
+  width: 100%;
+}
+
+.header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid var(--neutral-400);
+  padding: 1rem;
+}
+
+.header-overflow {
+  border-top: 0.1rem solid var(--neutral-400);
   background-color: var(--neutral-100);
-  padding: 16px;
   width: 100%;
+  height: 1rem;
 }
 
 .header-menu-icon,
@@ -255,10 +271,85 @@ hr {
   letter-spacing: var(--txt-preset-10-ls);
 }
 
+/* Main Header Section */
+
+main {
+  padding: 0 1rem 2.5rem 1rem;
+}
+
+.main-header-text-container {
+  margin-block-end: 1rem;
+}
+
+.booking-text {
+  margin-block-end: 0.25rem;
+  color: var(--neutral-600);
+  font-size: var(--txt-preset-8-fs);
+  line-height: var(--txt-preset-8-lh);
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-8-ls);
+}
+
+h1 {
+  color: var(--neutral-900);
+  font-weight: var(--txt-preset-1-fw);
+  font-size: var(--txt-preset-1-fs);
+  line-height: var(--txt-preset-1-lh);
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-1-ls);
+}
+
+h1 span {
+  color: var(--terracotta-600);
+}
+
+.main-header-btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header-btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.625rem 1rem;
+  width: 11rem;
+  height: 2.3125rem;
+  font-weight: var(--txt-preset-5-semi-b-fw);
+  font-size: var(--txt-preset-5-semi-b-fs);
+  line-height: var(--txt-preset-5-semi-b-lh);
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-5-semi-b-ls);
+}
+
+.print-receipt-btn {
+  border: 0.1rem solid var(--neutral-400);
+  background-color: transparent;
+  color: var(--neutral-900);
+}
+
+.add-to-calender-btn {
+  background-color: var(--neutral-900);
+  color: var(--sun-50);
+}
+
 @media screen and (min-width: 51.25rem) {
-  /* Mobile Menu */
+  body {
+    background-color: var(--neutral-200);
+  }
+
   .mobile_menu {
     width: 384px;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-btn {
+    width: 10rem;
   }
 }
 
@@ -276,5 +367,11 @@ hr {
 
   .close-btn {
     display: none;
+  }
+
+  main {
+    margin-inline-start: 16.25rem;
+    padding: 2rem 2.5rem;
+    width: 100%;
   }
 }
