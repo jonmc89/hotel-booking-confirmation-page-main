@@ -30,59 +30,60 @@
   --rose-500: #c04a72;
 
   /* Text Presets */
-  --txt-preset-1-fs: 2.5rem;
+  --txt-preset-1-fs: 40px;
   --txt-preset-1-lh: 120%;
-  --txt-preset-1-ls: -0.5px;
-  --txt-preset-1-ital-fs: 2.5rem;
+  --txt-preset-1-ls: -0.0313rem;
+  --txt-preset-1-ital-fs: 40px;
   --txt-preset-1-ital-lh: 120%;
-  --txt-preset-1-ital-ls: -0.5px;
+  --txt-preset-1-ital-ls: -0.0313rem;
   --txt-preset-1-ital-style: italic;
-  --txt-preset-2-fs: 2rem;
+  --txt-preset-2-fs: 32px;
   --txt-preset-2-lh: 120%;
-  --txt-preset-2-ls: -0.25px;
-  --txt-preset-3-fs: 1.5rem;
+  --txt-preset-2-ls: -0.0156rem;
+  --txt-preset-3-fs: 24px;
   --txt-preset-3-lh: 140%;
-  --txt-preset-3-ls: -0.2px;
-  --txt-preset-4-fs: 1.25rem;
+  --txt-preset-3-ls: -0.0125rem;
+  --txt-preset-4-fs: 20px;
   --txt-preset-4-lh: 140%;
-  --txt-preset-4-ls: -0.1px;
-  --txt-preset-4-ital-fs: 1.25rem;
+  --txt-preset-4-ls: -0.0063rem;
+  --txt-preset-4-ital-fs: 20px;
   --txt-preset-4-ital-lh: 140%;
-  --txt-preset-4-ital-ls: -0.1px;
+  --txt-preset-4-ital-ls: -0.0063rem;
   --txt-preset-4-ital-style: italic;
-  --txt-preset-5-fs: 14px;
+  --txt-preset-5-fs: 0.875rem;
   --txt-preset-5-lh: 140%;
-  --txt-preset-5-med-fs: 0.875rem;
+  --txt-preset-5-med-fs: 14px;
   --txt-preset-5-med-lh: 120%;
   --txt-preset-5-med-fw: 500;
-  --txt-preset-5-semi-b-fs: 0.875rem;
+  --txt-preset-5-semi-b-fs: 14px;
   --txt-preset-5-semi-b-lh: 120%;
-  --txt-preset-5-semi-b-ls: 0.3px;
+  --txt-preset-5-semi-b-ls: 0.0187rem;
   --txt-preset-5-semi-b-fw: 600;
-  --txt-preset-6-fs: 0.875rem;
+  --txt-preset-6-fs: 14px;
   --txt-preset-6-lh: 140%;
-  --txt-preset-6-ls: 2px;
+  --txt-preset-6-ls: 0.125rem;
   --txt-preset-6-fw: 500;
-  --txt-preset-7-fs: 0.75rem;
+  --txt-preset-7-fs: 12px;
   --txt-preset-7-lh: 120%;
-  --txt-preset-7-ls: 0.4px;
-  --txt-preset-8-fs: 0.75rem;
+  --txt-preset-7-ls: 0.025rem;
+  --txt-preset-8-fs: 12px;
   --txt-preset-8-lh: 140%;
-  --txt-preset-8-ls: 2px;
-  --txt-preset-9-fs: 0.75rem;
+  --txt-preset-8-ls: 0.125rem;
+  --txt-preset-9-fs: 12px;
   --txt-preset-9-lh: 140%;
-  --txt-preset-10-fs: 10px;
+  --txt-preset-10-fs: 0.625rem;
   --txt-preset-10-lh: 140%;
-  --txt-preset-10-ls: 1px;
-  --txt-preset-11-fs: 10px;
+  --txt-preset-10-ls: 0.0625rem;
+  --txt-preset-11-fs: 0.625rem;
   --txt-preset-11-lh: 140%;
-  --txt-preset-11-ls: 1px;
+  --txt-preset-11-ls: 0.0625rem;
 }
 
 /* || Main Styles */
 
 body {
   position: relative;
+  width: min(100%, 90rem);
   height: 100vh;
 }
 
@@ -92,18 +93,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.0625rem solid var(--neutral-400);
+  border: 1px solid var(--neutral-400);
   background-color: var(--neutral-100);
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
 }
 
 .header-menu-icon,
 .close-btn {
   cursor: pointer;
-  border: 0.0625rem solid var(--neutral-400);
-  border-radius: 0.25rem;
-  padding: 0.5rem;
+  border: 1px solid var(--neutral-400);
+  border-radius: 4px;
+  padding: 8px;
 }
 
 /* Mobile Menu */
@@ -139,7 +140,7 @@ header {
     z-index 0.1s ease-in-out;
   inset: 0;
   background-color: var(--neutral-100);
-  width: 20rem;
+  width: 320px;
 }
 
 .mobile_menu_visible {
@@ -152,10 +153,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: 1rem;
-  border: 0.0625rem solid var(--neutral-400);
+  margin-block-end: 16px;
+  border: 1px solid var(--neutral-400);
   background-color: var(--neutral-100);
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
 }
 
@@ -167,18 +168,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 16px;
   height: 85vh;
 }
 
 .mobile_nav_list_item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  padding: 8px 12px;
   font-weight: var(--txt-preset-5-med-fw);
   font-size: var(--txt-preset-5-med-fs);
   line-height: var(--txt-preset-5-med-lh);
@@ -191,18 +192,19 @@ header {
 
 .mobile_menu_weather {
   position: relative;
-  margin-block-end: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem var(--neutral-400);
-  border-radius: 1rem;
+  margin-block-end: 16px;
+  box-shadow: 3.2px 3.2px 8px var(--neutral-400);
+  border-radius: 16px;
   background-color: var(--sun-300);
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
+  width: 100%;
   overflow: hidden;
 }
 
 .weather_text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .weather_today {
@@ -237,7 +239,7 @@ header {
 }
 
 hr {
-  margin-block-end: 1rem;
+  margin-block-end: 16px;
   border-style: dashed;
   color: var(--neutral-400);
 }
@@ -245,10 +247,34 @@ hr {
 .menu_footer_text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
   color: var(--neutral-600);
   font-size: var(--txt-preset-10-fs);
   line-height: var(--txt-preset-10-lh);
   font-family: 'DM Mono', Arial, Helvetica, sans-serif;
   letter-spacing: var(--txt-preset-10-ls);
+}
+
+@media screen and (min-width: 51.25rem) {
+  /* Mobile Menu */
+  .mobile_menu {
+    width: 384px;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  header {
+    display: none;
+  }
+
+  .mobile_menu {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 99;
+    width: 16.25rem;
+  }
+
+  .close-btn {
+    display: none;
+  }
 }
