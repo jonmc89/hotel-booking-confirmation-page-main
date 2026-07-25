@@ -277,6 +277,10 @@ main {
   padding: 0 1rem 2.5rem 1rem;
 }
 
+.main-header {
+  margin-block-end: 3rem;
+}
+
 .main-header-text-container {
   margin-block-end: 1rem;
 }
@@ -301,6 +305,7 @@ h1 {
 
 h1 span {
   color: var(--terracotta-600);
+  font-style: italic;
 }
 
 .main-header-btns-container {
@@ -331,6 +336,102 @@ h1 span {
 .add-to-calender-btn {
   background-color: var(--neutral-900);
   color: var(--sun-50);
+}
+
+/* Booking Cards Section */
+
+.booking-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-item {
+  padding: 1.5rem;
+  width: 20.4375rem;
+  height: 26.25rem;
+}
+
+.welcome-card {
+  transform: rotate(2deg);
+  border-radius: 1.25rem;
+  background: radial-gradient(
+    circle at top right,
+    var(--terracotta-400) 0%,
+    var(--terracotta-500) 50%,
+    var(--terracotta-700) 100%
+  );
+}
+
+.welcome-card-content {
+  border-top: 0.1rem dashed var(--terracotta-400);
+}
+
+.welcome-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.welcome-title,
+.room {
+  color: var(--sun-50);
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+}
+
+.welcome-title,
+.room {
+  font-size: var(--txt-preset-10-fs);
+  line-height: var(--txt-preset-10-lh);
+  letter-spacing: var(--txt-preset-10-ls);
+}
+
+.welcome-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6.8em;
+}
+
+.note-from-host,
+.host-name,
+.room-name {
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+}
+.note-from-host {
+  color: var(--sun-200);
+  font-style: var(--txt-preset-4-ital-style);
+  font-weight: var(--txt-preset-4-ital-fw);
+  font-size: var(--txt-preset-4-ital-fs);
+  line-height: var(--txt-preset-4-ital-lh);
+  letter-spacing: var(--txt-preset-4-ital-ls);
+}
+
+.host-name,
+.welcome-card-txt,
+.room-name {
+  color: var(--sun-50);
+}
+
+.host-name {
+  margin-block-end: 2rem;
+  font-style: var(--txt-preset-1-ital-style);
+  font-weight: var(--txt-preset-1-ital-fw);
+  font-size: var(--txt-preset-1-ital-fs);
+  line-height: var(--txt-preset-1-ital-lh);
+  letter-spacing: var(--txt-preset-1-ital-ls);
+}
+
+.welcome-card-txt {
+  font-weight: var(--txt-preset-5-fw);
+  font-size: var(--txt-preset-5-fs);
+  line-height: var(--txt-preset-5-lh);
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+.room-name {
+  font-weight: var(--txt-preset-4-fw);
+  font-size: var(--txt-preset-4-fs);
 }
 
 @media screen and (min-width: 51.25rem) {
