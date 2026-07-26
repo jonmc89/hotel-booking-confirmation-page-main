@@ -28,7 +28,7 @@
   --terracotta-600: #b7411b;
   --terracotta-500: #c25a2e;
   --terracotta-400: #e07a3f;
-  --terracotta-300: #e28668;
+  --terracotta-300: #f1b39f;
   --rose-500: #c04a72;
 
   /* Text Presets */
@@ -357,9 +357,9 @@ h1 span {
 }
 
 .welcome-card {
-  transform: rotate(2deg);
+  transform: rotate(4deg);
   z-index: 5;
-  box-shadow: 1rem 1rem 4rem var(--terracotta-300);
+  box-shadow: 1rem 1.2rem 3rem var(--terracotta-300);
   border-radius: 1.25rem;
   background: radial-gradient(
     circle at top right,
@@ -442,19 +442,18 @@ h1 span {
 
 /* Receipt Card */
 .receipt-card {
-  transform: rotate(-2deg);
+  transform: rotate(-4deg);
   box-shadow: 1rem 0rem 3rem var(--neutral-400);
   border-radius: 1.25rem;
   background-color: var(--neutral-50);
   padding: 1.5rem 1.5rem;
-  height: auto;
   color: var(--neutral-900);
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 .receipt-header {
   border-bottom: 0.1rem dashed var(--neutral-400);
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.2rem;
 }
 
 .left-title,
@@ -484,9 +483,9 @@ h1 span {
 
 .check-container {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
   border-bottom: 0.1rem dashed var(--neutral-400);
-  padding: 1rem 0;
+  padding: 1.2rem 1.5rem;
 }
 
 .check-date {
@@ -516,7 +515,8 @@ h1 span {
 }
 
 .breakdown-container {
-  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--neutral-400);
+  padding: 1.2rem 0;
 }
 
 .breakdown-item {
@@ -534,6 +534,14 @@ h1 span {
 .breakdown-item,
 .breakdown-price {
   color: var(--neutral-900);
+}
+
+.receipt-total-container {
+  padding: 1.2rem 0;
+}
+
+.receipt-total-container table {
+  width: 100%;
 }
 
 .total-header {
@@ -554,6 +562,13 @@ h1 span {
   padding-right: 3rem;
 }
 
+.total-price-row,
+.barcode-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 51.25rem) {
   body {
     background-color: var(--neutral-200);
@@ -572,9 +587,24 @@ h1 span {
   .header-btn {
     width: 10rem;
   }
+
+  .booking-cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .welcome-item {
+    width: 21.25rem;
+  }
 }
 
 @media screen and (min-width: 90rem) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 1fr;
+  }
   header {
     display: none;
   }
@@ -594,5 +624,10 @@ h1 span {
     margin-inline-start: 16.25rem;
     padding: 2rem 2.5rem;
     width: 100%;
+  }
+
+  .welcome-item {
+    width: 25rem;
+    height: 26.25rem;
   }
 }
