@@ -32,67 +32,71 @@
   --rose-500: #c04a72;
 
   /* Text Presets */
-  --txt-preset-1-fs: 48px;
+  --txt-preset-1-fs: 3rem;
   --txt-preset-1-lh: 120%;
-  --txt-preset-1-ls: -0.0313rem;
+  --txt-preset-1-ls: -0.5008px;
   --txt-preset-1-fw: 400;
-  --txt-preset-1-ital-fs: 2.5rem;
+  --txt-preset-1-ital-fs: 40px;
   --txt-preset-1-ital-lh: 120%;
-  --txt-preset-1-ital-ls: -0.0313rem;
+  --txt-preset-1-ital-ls: -0.5008px;
   --txt-preset-1-ital-style: italic;
   --txt-preset-1-ital-fw: 400;
-  --txt-preset-2-fs: 1.8rem;
+  --txt-preset-2-fs: 28.8px;
   --txt-preset-2-lh: 120%;
-  --txt-preset-2-ls: -0.0156rem;
+  --txt-preset-2-ls: -0.2496px;
   --txt-preset-2-fw: 400;
-  --txt-preset-3-fs: 1.5rem;
+  --txt-preset-3-fs: 24px;
   --txt-preset-3-lh: 140%;
-  --txt-preset-3-ls: -0.0125rem;
+  --txt-preset-3-ls: -0.2px;
   --txt-preset-3-fw: 400;
-  --txt-preset-4-fs: 1.25rem;
+  --txt-preset-4-fs: 20px;
   --txt-preset-4-lh: 140%;
-  --txt-preset-4-ls: -0.0063rem;
+  --txt-preset-4-ls: -0.1008px;
   --txt-preset-4-fw: 400;
-  --txt-preset-4-ital-fs: 1.25rem;
+  --txt-preset-4-ital-fs: 20px;
   --txt-preset-4-ital-lh: 140%;
-  --txt-preset-4-ital-ls: -0.0063rem;
+  --txt-preset-4-ital-ls: -0.1008px;
   --txt-preset-4-ital-style: italic;
   --txt-preset-4-ital-fw: 400;
-  --txt-preset-5-fs: 0.775rem;
+  --txt-preset-5-fs: 12.4px;
   --txt-preset-5-lh: 140%;
   --txt-preset-5-fw: 400;
-  --txt-preset-5-med-fs: 0.875rem;
+  --txt-preset-5-med-fs: 14px;
   --txt-preset-5-med-lh: 120%;
   --txt-preset-5-med-fw: 500;
-  --txt-preset-5-semi-b-fs: 0.875rem;
+  --txt-preset-5-semi-b-fs: 14px;
   --txt-preset-5-semi-b-lh: 120%;
-  --txt-preset-5-semi-b-ls: 0.0187rem;
+  --txt-preset-5-semi-b-ls: 0.2992px;
   --txt-preset-5-semi-b-fw: 600;
-  --txt-preset-6-fs: 0.875rem;
+  --txt-preset-6-fs: 14px;
   --txt-preset-6-lh: 140%;
-  --txt-preset-6-ls: 0.125rem;
+  --txt-preset-6-ls: 2px;
   --txt-preset-6-fw: 500;
-  --txt-preset-7-fs: 0.65rem;
+  --txt-preset-7-fs: 10.4px;
   --txt-preset-7-lh: 120%;
-  --txt-preset-7-ls: 0.025rem;
-  --txt-preset-8-fs: 0.75rem;
+  --txt-preset-7-ls: 0.4px;
+  --txt-preset-8-fs: 12px;
   --txt-preset-8-lh: 140%;
-  --txt-preset-8-ls: 0.125rem;
-  --txt-preset-9-fs: 0.75rem;
+  --txt-preset-8-ls: 2px;
+  --txt-preset-9-fs: 12px;
   --txt-preset-9-lh: 140%;
-  --txt-preset-10-fs: 0.625rem;
+  --txt-preset-10-fs: 10px;
   --txt-preset-10-lh: 140%;
-  --txt-preset-10-ls: 0.0625rem;
-  --txt-preset-11-fs: 0.625rem;
+  --txt-preset-10-ls: 1px;
+  --txt-preset-11-fs: 10px;
   --txt-preset-11-lh: 140%;
-  --txt-preset-11-ls: 0.0625rem;
+  --txt-preset-11-ls: 1px;
 }
 
 /* || Main Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
-  width: min(100%, 90rem);
+  width: min(100%, 1440px);
   height: 100vh;
 }
 
@@ -107,22 +111,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .header-overflow {
-  border-top: 0.1rem solid var(--neutral-400);
+  border-top: 1.6px solid var(--neutral-400);
   background-color: var(--neutral-100);
   width: 100%;
-  height: 1rem;
+  height: 16px;
 }
 
 .header-menu-icon,
 .close-btn {
   cursor: pointer;
-  border: 1px solid var(--neutral-400);
-  border-radius: 4px;
-  padding: 8px;
+  border: 0.0625rem solid var(--neutral-400);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
 }
 
 /* Mobile Menu */
@@ -158,7 +162,7 @@ header {
     z-index 0.1s ease-in-out;
   inset: 0;
   background-color: var(--neutral-100);
-  width: 320px;
+  width: 20rem;
 }
 
 .mobile_menu_visible {
@@ -171,10 +175,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: 16px;
-  border: 1px solid var(--neutral-400);
+  margin-block-end: 1rem;
+  border: 0.0625rem solid var(--neutral-400);
   background-color: var(--neutral-100);
-  padding: 16px;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -186,18 +190,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 1rem;
   height: 85vh;
 }
 
 .mobile_nav_list_item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
-  border-radius: 8px;
-  padding: 8px 12px;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
   font-weight: var(--txt-preset-5-med-fw);
   font-size: var(--txt-preset-5-med-fs);
   line-height: var(--txt-preset-5-med-lh);
@@ -210,11 +214,11 @@ header {
 
 .mobile_menu_weather {
   position: relative;
-  margin-block-end: 16px;
-  box-shadow: 3.2px 3.2px 8px var(--neutral-400);
-  border-radius: 16px;
+  margin-block-end: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--neutral-400);
+  border-radius: 1rem;
   background-color: var(--sun-300);
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   width: 100%;
   overflow: hidden;
 }
@@ -222,7 +226,7 @@ header {
 .weather_text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .weather_today {
@@ -257,7 +261,7 @@ header {
 }
 
 hr {
-  margin-block-end: 16px;
+  margin-block-end: 1rem;
   border-style: dashed;
   color: var(--neutral-400);
 }
@@ -265,7 +269,7 @@ hr {
 .menu_footer_text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
   color: var(--neutral-600);
   font-size: var(--txt-preset-10-fs);
   line-height: var(--txt-preset-10-lh);
@@ -276,19 +280,19 @@ hr {
 /* Main Header Section */
 
 main {
-  padding: 0 1rem 2.5rem 1rem;
+  padding: 0 16px 40px 16px;
 }
 
 .main-header {
-  margin-block-end: 3rem;
+  margin-block-end: 48px;
 }
 
 .main-header-text-container {
-  margin-block-end: 1rem;
+  margin-block-end: 16px;
 }
 
 .booking-text {
-  margin-block-end: 0.25rem;
+  margin-block-end: 4px;
   color: var(--neutral-600);
   font-size: var(--txt-preset-8-fs);
   line-height: var(--txt-preset-8-lh);
@@ -313,15 +317,15 @@ h1 span {
 .main-header-btns-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .header-btn {
   border: none;
-  border-radius: 2rem;
-  padding: 0.625rem 1rem;
-  width: 11rem;
-  height: 2.3125rem;
+  border-radius: 32px;
+  padding: 10px 16px;
+  width: 176px;
+  height: 37px;
   font-weight: var(--txt-preset-5-semi-b-fw);
   font-size: var(--txt-preset-5-semi-b-fs);
   line-height: var(--txt-preset-5-semi-b-lh);
@@ -330,14 +334,36 @@ h1 span {
 }
 
 .print-receipt-btn {
-  border: 0.1rem solid var(--neutral-400);
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1.6px solid var(--neutral-400);
   background-color: transparent;
   color: var(--neutral-900);
 }
 
+.print-receipt-btn:hover {
+  background-color: var(--terracotta-700);
+  color: var(--neutral-50);
+}
+
 .add-to-calender-btn {
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  cursor: pointer;
   background-color: var(--neutral-900);
   color: var(--sun-50);
+}
+
+.add-to-calender-btn:hover {
+  background-color: var(--neutral-400);
+  color: var(--neutral-800);
+}
+
+.sun-image {
+  display: none;
 }
 
 /* Booking Cards Section */
@@ -348,19 +374,20 @@ h1 span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block-end: 3rem;
 }
 
 .welcome-item {
-  padding: 1.5rem;
-  width: 20.4375rem;
-  height: 26.25rem;
+  padding: 24px;
+  width: 327px;
+  height: 420px;
 }
 
 .welcome-card {
   transform: rotate(4deg);
   z-index: 5;
-  box-shadow: 1rem 1.2rem 3rem var(--terracotta-300);
-  border-radius: 1.25rem;
+  box-shadow: 16px 19.2px 48px var(--terracotta-300);
+  border-radius: 20px;
   background: radial-gradient(
     circle at top right,
     var(--terracotta-400) 0%,
@@ -370,13 +397,13 @@ h1 span {
 }
 
 .welcome-card-content {
-  border-top: 0.1rem dashed var(--terracotta-400);
+  border-top: 1.6px dashed var(--terracotta-400);
 }
 
 .welcome-card-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 16px;
 }
 
 .welcome-title,
@@ -420,7 +447,7 @@ h1 span {
 }
 
 .host-name {
-  margin-block-end: 2rem;
+  margin-block-end: 32px;
   font-style: var(--txt-preset-1-ital-style);
   font-weight: var(--txt-preset-1-ital-fw);
   font-size: var(--txt-preset-1-ital-fs);
@@ -443,17 +470,17 @@ h1 span {
 /* Receipt Card */
 .receipt-card {
   transform: rotate(-4deg);
-  box-shadow: 1rem 0rem 3rem var(--neutral-400);
-  border-radius: 1.25rem;
+  box-shadow: 16px 0px 48px var(--neutral-400);
+  border-radius: 20px;
   background-color: var(--neutral-50);
-  padding: 1.5rem 1.5rem;
+  padding: 24px 24px;
   color: var(--neutral-900);
   font-family: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 .receipt-header {
-  border-bottom: 0.1rem dashed var(--neutral-400);
-  padding-bottom: 1.2rem;
+  border-bottom: 1.6px dashed var(--neutral-400);
+  padding-bottom: 19.2px;
 }
 
 .left-title,
@@ -472,7 +499,7 @@ h1 span {
 }
 
 .receipt-header-right {
-  gap: 1rem;
+  gap: 16px;
 }
 
 .rec-header,
@@ -484,8 +511,8 @@ h1 span {
 .check-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.1rem dashed var(--neutral-400);
-  padding: 1.2rem 1.5rem;
+  border-bottom: 1.6px dashed var(--neutral-400);
+  padding: 19.2px 24px;
 }
 
 .check-date {
@@ -498,7 +525,7 @@ h1 span {
 .check-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
   text-align: center;
 }
 
@@ -515,12 +542,12 @@ h1 span {
 }
 
 .breakdown-container {
-  border-bottom: 0.1rem solid var(--neutral-400);
-  padding: 1.2rem 0;
+  border-bottom: 1.6px solid var(--neutral-400);
+  padding: 19.2px 0;
 }
 
 .breakdown-item {
-  padding-right: 1rem;
+  padding-right: 16px;
   font-weight: var(--txt-preset-5-fw);
   font-size: var(--txt-preset-5-fs);
   line-height: var(--txt-preset-5-lh);
@@ -537,7 +564,7 @@ h1 span {
 }
 
 .receipt-total-container {
-  padding: 1.2rem 0;
+  padding: 19.2px 0;
 }
 
 .receipt-total-container table {
@@ -559,7 +586,7 @@ h1 span {
 
 .total-header,
 .total-sub-header {
-  padding-right: 3rem;
+  padding-right: 48px;
 }
 
 .total-price-row,
@@ -569,13 +596,175 @@ h1 span {
   align-items: center;
 }
 
-@media screen and (min-width: 51.25rem) {
+/* Info Card Section */
+
+.info-cards-section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  gap: 1.125rem;
+}
+
+.info-card {
+  box-shadow: 0rem 1rem 2rem var(--neutral-400);
+  border: 0.1rem solid var(--neutral-400);
+  border-radius: 1rem;
+  background-color: var(--neutral-50);
+  padding: 1.25rem 1rem;
+}
+
+.card-category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 1.25rem;
+}
+
+.card-category {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.info-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--terracotta-600);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+h2 {
+  color: var(--terracotta-600);
+  font-weight: var(--txt-preset-6-fw);
+  font-size: var(--txt-preset-6-fs);
+  line-height: var(--txt-preset-6-lh);
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-6-ls);
+}
+
+.info-num,
+h3 {
+  font-weight: var(--txt-preset-3-fw);
+  font-size: var(--txt-preset-3-fs);
+  line-height: var(--txt-preset-3-lh);
+  font-family: 'Fraunces', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-3-ls);
+}
+
+h3 {
+  margin-block-end: 0.5rem;
+}
+
+.info-num {
+  color: var(--terracotta-600);
+}
+
+.info-date {
+  margin-block-end: 1rem;
+  color: var(--neutral-600);
+  font-size: var(--txt-preset-7-fs);
+  line-height: var(--txt-preset-7-lh);
+  letter-spacing: var(--txt-preset-7-ls);
+}
+
+.info-date,
+.info-text {
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+.info-text {
+  color: var(--neutral-700);
+  font-weight: var(--txt-preset-5-fw);
+  font-size: var(--txt-preset-5-fs);
+  line-height: var(--txt-preset-5-lh);
+}
+
+.wifi-icon {
+  background-color: var(--blue-500);
+}
+
+.wifi-text {
+  color: var(--blue-500);
+}
+
+.brek-icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.breakfast-icon {
+  background-color: var(--rose-500);
+}
+
+.breakfast-text {
+  color: var(--rose-500);
+}
+
+.wifi-container-name {
+  margin-block-end: 4px;
+}
+
+.wifi-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--neutral-200);
+  padding: 0rem 0.625rem;
+  height: 32px;
+  color: var(--neutral-900);
+}
+
+.wifi-header {
+  color: var(--neutral-600);
+  font-size: var(--txt-preset-8-fs);
+  line-height: var(--txt-preset-8-lh);
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-8-ls);
+}
+
+.wifi-name {
+  font-size: var(--txt-preset-7-fs);
+  line-height: var(--txt-preset-7-lh);
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-7-ls);
+}
+
+.wifi-pw-copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-btn {
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1.6px solid var(--neutral-400);
+  border-radius: 32px;
+  padding: 4px 8px 2px 8px;
+  color: var(--neutral-600);
+  font-size: var(--txt-preset-10-fs);
+  line-height: var(--txt-preset-10-lh);
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+  letter-spacing: var(--txt-preset-10-ls);
+}
+
+.copy-btn:hover {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+
+@media screen and (min-width: 820px) {
   body {
     background-color: var(--neutral-200);
   }
 
   .mobile_menu {
-    width: 384px;
+    width: 24rem;
   }
 
   .main-header {
@@ -585,7 +774,7 @@ h1 span {
   }
 
   .header-btn {
-    width: 10rem;
+    width: 160px;
   }
 
   .booking-cards {
@@ -595,11 +784,16 @@ h1 span {
   }
 
   .welcome-item {
-    width: 21.25rem;
+    width: 340px;
+  }
+
+  .info-cards-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 1440px) {
   body {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -613,7 +807,7 @@ h1 span {
     transform: translateX(0%);
     opacity: 1;
     z-index: 99;
-    width: 16.25rem;
+    width: 260px;
   }
 
   .close-btn {
@@ -621,13 +815,54 @@ h1 span {
   }
 
   main {
-    margin-inline-start: 16.25rem;
-    padding: 2rem 2.5rem;
+    margin-inline-start: 260px;
+    padding: 32px 40px;
     width: 100%;
   }
 
   .welcome-item {
-    width: 25rem;
-    height: 26.25rem;
+    width: 400px;
+    height: 420px;
+  }
+
+  .info-cards-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .booking-cards {
+    position: relative;
+  }
+
+  .sun-image {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .welcome-item {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .welcome-card {
+    transform-origin: top left;
+  }
+  .receipt-card {
+    transform-origin: top right;
+  }
+
+  .booking-cards:hover .welcome-card {
+    transform: rotate(-5deg) translateX(4rem);
+    box-shadow: none;
+  }
+  .booking-cards:hover .receipt-card {
+    transform: rotate(5deg) translateX(-4rem);
+    box-shadow: none;
+  }
+
+  .booking-cards:hover .sun-image {
+    opacity: 1;
   }
 }
